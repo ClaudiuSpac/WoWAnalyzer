@@ -217,6 +217,7 @@ class App extends Component {
       _: refresh ? +new Date() : undefined,
       translate: true, // so long as we don't have the entire site localized, it's better to have 1 consistent language
     });
+
     return fetch(url)
       .then(response => response.json())
       .then(json => {
